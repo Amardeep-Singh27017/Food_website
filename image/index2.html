@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid img {
+            height: 200px;
+            width: 200px;
+        }
+        .grid{
+            height: 50%;
+            width: 50%;
+        }
+        .grid {
+            display: grid;
+            grid-gap: 2px;
+            grid-template-areas:
+                "I1 I3"
+                "I2 I4";
+            grid-template-areas:
+                "I1 I3"
+                "I2 I4";
+
+
+        }
+
+        .item1 {
+            grid-area: I1;
+        }
+
+        .item2 {
+            grid-area: I2;
+        }
+
+        .item3 {
+            grid-area: I3;
+        }
+
+        .item4 {
+            grid-area: I4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="item1">
+            <div class="item1">
+                <img class="grid-image" src="grid_image1.jpeg" alt="image1">
+            </div>
+        </div>
+        <div class="item2">
+            <div class="item1">
+                <img class="grid-image" src="grid_image1.jpeg" alt="image1">
+            </div>
+        </div>
+        <div class="item3">
+            <div class="item1">
+                <img class="grid-image" src="grid_image1.jpeg" alt="image1">
+            </div>
+        </div>
+        <div class="item4">
+            <div class="item1">
+                <img class="grid-image" src="grid_image1.jpeg" alt="image1">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
